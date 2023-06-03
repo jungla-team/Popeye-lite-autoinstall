@@ -719,11 +719,11 @@ function configurando_idioma_cervantes() {
     opkg install enigma2-locale-es >>$POPEYE_LOG 2>&1 | progress_bar 10
     echo
     echo " 🇪🇸 Configurando imagen a idioma castellano:"
-    echo "config.misc.country=ES" >> /etc/enigma2/settings >>$POPEYE_LOG 2>&1 | progress_bar 3
-    echo "config.misc.language=es" >> /etc/enigma2/settings >>$POPEYE_LOG 2>&1 | progress_bar 3
-    echo "config.misc.locale=es_ES" >> /etc/enigma2/settings >>$POPEYE_LOG 2>&1 | progress_bar 3
-    echo "config.osd.language=es_ES" >> /etc/enigma2/settings >>$POPEYE_LOG 2>&1 | progress_bar 3
-    echo "config.timezone.val=Madrid" >> /etc/enigma2/settings >>$POPEYE_LOG 2>&1 | progress_bar 3
+    echo "config.misc.country=ES" >> /etc/enigma2/settings | progress_bar 3
+    echo "config.misc.language=es" >> /etc/enigma2/settings | progress_bar 3
+    echo "config.misc.locale=es_ES" >> /etc/enigma2/settings | progress_bar 3
+    echo "config.osd.language=es_ES" >> /etc/enigma2/settings | progress_bar 3
+    echo "config.timezone.val=Madrid" >> /etc/enigma2/settings | progress_bar 3
     echo
     echo "👍 Proceso terminado."
     echo -e "${BLUE}------------------------------------------------------------------------------------${RESET}"
